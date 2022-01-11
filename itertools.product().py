@@ -7,5 +7,5 @@
 from itertools import product
 A = list(map(int, input().split()))
 B = list(map(int, input().split()))
-AxB = list(map(str, list(product(A, B)))) # map list of all items of cartisian product to string
-print(*AxB) # * means all and (*AxB) means all items of AxB
+print(*product(A, B)) # print all items of result product(A,B)
+
