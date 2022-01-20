@@ -1,4 +1,4 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
+# solution notes pending
 _ = int(input())
 set_m = set(map(int, input().split()))
 _ = int(input())
