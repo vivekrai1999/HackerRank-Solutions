@@ -1,4 +1,4 @@
-# solution notes
+# solution notes pending
 if __name__ == '__main__':
     s_list = []
     for _ in range(int(input())):
