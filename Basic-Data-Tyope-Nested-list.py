@@ -23,3 +23,19 @@ if __name__ == '__main__':
     name_sorted = sorted(final) # sort the final  list
     for i in name_sorted: # print the final list
         print(i)
+
+# solution 2 - 21 feb 2022
+
+if __name__ == '__main__':
+    l = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        l.append([name,score])
+    l_sorted = sorted(l, key = lambda x: x[1])
+    lowest = l_sorted[0][1]
+    l_final = [i for i in l_sorted if i[1]!=lowest]
+    sec_lowest = l_final[0][1]
+    final = sorted([i[0] for i in l_final if i[1]==sec_lowest])
+    for name in final:
+        print(name)
