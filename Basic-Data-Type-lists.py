@@ -14,3 +14,14 @@ if __name__ == '__main__':
         else: # and if the command is equal to print then print the list simply
             print(my_list)
         
+# solution 2 - 21 feb 2022
+
+if __name__ == '__main__':
+    N = int(input())
+    arr = []
+    for _ in range(N):
+        command = input().split()
+        if command[0] != 'print':
+            eval('arr.'+command[0]+'('+','.join(command[1:])+')')
+        else:
+            print(arr)
